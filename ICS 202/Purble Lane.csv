@@ -1,0 +1,10 @@
+Station code,time to next station,time to previous station
+6A1/1A1,450,-1
+6D1,120,450
+6D2,120,120
+6.00E+01,90,120
+6F1/2E1,90,90
+6G1,90,90
+6G2,90,90
+6H1,120,90
+6H2,-1,120
