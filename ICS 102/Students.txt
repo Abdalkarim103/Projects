@@ -1,0 +1,8 @@
+ 91007  	  Ahmad Said       50.0   30.0   60.0   
+ 91004  	  Hassan Khan      45.5   40.0   47.3   
+ 91003  	  Suleiman Wasim   72.6   50.5   50.0
+ 91002  	  Majed Sameer     60.0   70.1   30.5   
+ 91006  	  Muhammad Adel    85.5   90.4   70.2   
+ 91005  	  Muhsim Zuheir    70.0   80.5   30.0
+ 91001  	  Muneeb Abdullat  30.0   75.0   45.0 
+ 910090  	  kroom            70.0   70.0   70.0   
