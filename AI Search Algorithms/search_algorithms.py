@@ -17,23 +17,25 @@ def expand(problem, node):
 
 
 def get_path_actions(node):
-    if node.parent_node is None:
-        return []
-    elif node is None:
+    actions = []
+    if(node == None or node.parent_node == None):
         return []
     else:
-        path_actions=[node.action_from_parent]+ get_path_actions(node.parent_node)
-        return path_actions
+        while node.action_from_parent != None:
+            actions.insert(0,node.action_from_parent)
+            node = node.parent_node
+        return actions
 
 
 def get_path_states(node):
-    if node.parent_node is None:
-        return []
-    elif node is None:
+    states = []
+    if(node == None):
         return []
     else:
-        path_states=[node.state] + get_path_states(node.parent_node) 
-        return path_states
+        while node != None:
+            states.insert(0,node.state)
+            node = node.parent_node
+        return states
     
 def best_first_search(problem,f):
     node =Node(state=problem.initial_state)
@@ -45,7 +47,7 @@ def best_first_search(problem,f):
             return node
         for child in expand(problem,node):
             st1=child.state
-            if(st1 not in reached.keys() or child.parent_cost < reached[st1].path_cost):
+            if(st1 not in reached.keys() or child.path_cost < reached[st1].path_cost):
                 reached[st1]=child
                 frontier.add(child)
     return None
